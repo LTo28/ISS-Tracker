@@ -11,14 +11,15 @@
       /* The width is the width of the web page */
     }
   </style>
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <h3>ISS Trackr</h3>
   
   <div id="map"></div>
-  <button onclick="startTracking()">Start</button>
-  <button onclick="stopTracking()">Stop</button>
+  <div class="buttons"></div>
   <script src="./app.js"></script>
   
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCrHQlrqX4Dy66ywnC-Cs3LiKlhUkR6kvc&callback=initMap">
