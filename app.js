@@ -10,7 +10,7 @@ function initMap() {
 
 function createButton(text, clickFunction) {
   let button = document.createElement("button")
-  button.setAttribute('onclick', clickFunction)
+  button.addEventListener('click', clickFunction)
   button.innerHTML = text
   document.querySelector('.buttons').append(button)
 }
