@@ -21,12 +21,12 @@ const trackMovement = () => {
     .then(response => {
       const { latitude, longitude } = response.iss_position
       marker.setPosition({
-        lat: parseInt(latitude),
-        lng: parseInt(longitude)
+        lat: parseFloat(latitude),
+        lng: parseFloat(longitude)
       })
       map.panTo({
-        lat: parseInt(latitude),
-        lng: parseInt(longitude)
+        lat: parseFloat(latitude),
+        lng: parseFloat(longitude)
       })
     })
     .catch(e => console.error(e))
